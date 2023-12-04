@@ -46,4 +46,6 @@ ten fours but at least one die in their hand is not four (e.g. "4, 4, 4, 2") and
     </li>
   </ul>
 </p>
-
+<h2>Errors catching</h2>
+<p>I am 99% sure that the game won't throw an error, whenever an invalid input is placed.
+I tried to catch all of the possible errors the app could return, so I made an exceptions to them or just created a while loop preventing unwanted behavior.</p>
