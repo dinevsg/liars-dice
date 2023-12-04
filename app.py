@@ -12,8 +12,14 @@ class Game:
         self.previous_player = None
         self.wild_ones = None
 
-    def create_main_player(self):
-        main_player_name = (input("Choose your name:\n-- "))
+        def create_main_player(self):
+        while True:
+            main_player_name = (input("Choose your name:\n-- "))
+            if main_player_name == "" or main_player_name.isspace():
+                print(f"Your name could not be blank! Try again")
+                continue
+            break
+
         self.all_players.append(MainPlayer(main_player_name))
         print(f"Welcome {main_player_name}!")
         time.sleep(1)
