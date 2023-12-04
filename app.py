@@ -255,7 +255,7 @@ class Game:
             if len(main_player[0].hand) == 0:
                 time.sleep(1)
                 print(f"Goodbye! You lost all of your dice!\n Thanks for playing"
-                      f"---------- I would love to enter Strypes AWESOME team ----------")
+                      f"---------- I would love to join Strypes AWESOME team ----------")
                 raise SystemExit
 
             elif len(player.hand) == 0:
@@ -307,7 +307,7 @@ class Game:
 
         end_str = ("---------- Congratulations! You win! ----------"
                    f"\nDice left - {', '.join(str(die) for die in self.all_players[0].hand)}"
-                   f"\n---------- I would love to enter Strypes AWESOME team ----------")
+                   f"\n---------- I would love to join Strypes AWESOME team ----------")
         print(end_str)
 
 
