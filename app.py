@@ -12,7 +12,7 @@ class Game:
         self.previous_player = None
         self.wild_ones = None
 
-        def create_main_player(self):
+    def create_main_player(self):
         while True:
             main_player_name = (input("Choose your name:\n-- "))
             if main_player_name == "" or main_player_name.isspace():
@@ -319,4 +319,3 @@ class Game:
 
 a = Game()
 a.play_game()
-
